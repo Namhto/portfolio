@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Othman Tenich</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e4f6b75475.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <p class="navbar-item" id="logo">OTHMAN TENICH</p>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a id="home-navigation" class="navbar-item" value="homeNavigation"></a>
+                <a id="cv-navigation" class="navbar-item" value="cvNavigation"></a>
+                <a id="portfolio-navigation" class="navbar-item" value="portfolioNavigation"></a>
+                <a id="contact-navigation" class="navbar-item" value="contactNavigation"></a>
+                <span class="navbar-space"></span>
+                <a id="english" class="navbar-item navbar-inline">
+                    <img src="img/english.svg" height="24" width="24">
+                </a>
+                <a id="french" class="navbar-item navbar-inline">
+                    <img src="img/french.svg" height="24" width="24">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered is-reversed">
+                    <div class="column has-text-centered-mobile has-text-right-desktop">
+                        <img src="img/me.png" height="250rem" width="250rem" alt="Othman Tenich">
+                    </div>
+                    <div class="column is-two-thirds">
+                        <h1 class="title has-text-centered-mobile" value="homeTitle"></h1>
+                        <p class="has-text-justified" value="homeDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cv-section" class="hero is-medium is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="composed-title">
+                                <h1 class="title is-spaced has-text-black" value="cvDownloadTitle"></h1>
+                                <h6 class="subtitle is-6 has-text-black" value="cvDownloadFormat"></h6>
+                            </div>
+                        </div>
+                        <div class="level-item">
+                            <button class="button is-primary is-medium is-rounded" onclick="downloadCv()">
+                                <span class="icon">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span value="cvDownloadButton"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="level skills-title">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title has-text-black" value="skillsTitle"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="level">
+                    <div class="level-item">
+                        <div class="skills">
+                            <h5 class="subtitle is-5 has-text-black" value="backend"></h5>
+                            <table class="table is-fullwidth">
+                                <tr>
+                                    <td>Java</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="90" max="100">90%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kotlin</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="70" max="100">70%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Node.js</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="80" max="100">80%</progress>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="skills">
+                            <h5 class="subtitle is-5 has-text-black" value="frontend"></h5>
+                            <table class="table is-fullwidth">
+                                <tr>
+                                    <td>React.js</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="80" max="100">80%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vue.js</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="60" max="100">60%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>HTML / CSS</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="60" max="100">60%</progress>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="skills is-marginless">
+                            <h5 class="subtitle is-5 has-text-black" value="other"></h5>
+                            <table class="table is-fullwidth">
+                                <tr>
+                                    <td>GraphQL</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="90" max="100">90%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>UI / UX</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="50" max="100">50%</progress>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REST</td>
+                                    <td>
+                                        <progress class="progress is-dark is-small" value="70" max="100">70%</progress>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-section" class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title has-text-centered-mobile" value="positionTitle"></h1>
+                        <p class="has-text-justified" value="positionDescription"></p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="columns is-vcentered has-text-centered-mobile">
+                            <div class="column has-text-centered-mobile">
+                                <img src="img/github.png" height="150rem" width="150rem" alt="Github">
+                            </div>
+                            <div class="column is-four-fifths">
+                                <h5 class="subtitle is-5 has-text-centered-mobile" value="github"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columns is-vcentered has-text-centered-mobile">
+                            <div class="column has-text-centered-mobile">
+                                <img src="img/meetup.png" height="150rem" width="150rem" alt="Meetup">
+                            </div>
+                            <div class="column is-four-fifths">
+                                <h5 class="subtitle is-5 has-text-centered-mobile" value="meetup"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title has-text-black has-text-centered-mobile is-inline-block-desktop is-inline-block-tablet is-block-mobile"
+                            value="bookshelfTitle"></h1>
+                        <h6 class="subtitle is-6 has-text-black has-text-centered-mobile is-inline-block-desktop is-inline-block-tablet is-block-mobile"
+                            value="bookshelfHint"></h6>
+                        <div class="columns is-multiline is-centered is-mobile">
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0134494164/ref=cm_sw_r_tw_dp_U_x_ZYHoDb0Z4ZMP7">
+                                    <img src="img/clean-architecture.jpg" alt="Clean Architecture">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0132350882/ref=cm_sw_r_tw_dp_U_x_6ZHoDb8JYJDAA">
+                                    <img src="img/clean-code.jpg" alt="Clean Code">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0321125215/ref=cm_sw_r_tw_dp_U_x_c1HoDb442A9BF">
+                                    <img src="img/ddd.jpg" alt="Domain-Driven Development">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0321146530/ref=cm_sw_r_tw_dp_U_x_E1HoDbVKYSTVT">
+                                    <img src="img/tdd.jpg" alt="Test-Driven Development">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0134757599/ref=cm_sw_r_tw_dp_U_x_qpXoDbX7TMCEX">
+                                    <img src="img/refactoring.jpg" alt="Refactoring: Improving the Design of Existing Code">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0123747317/ref=cm_sw_r_tw_dp_U_x_rxXoDbX1B3FGG">
+                                    <img src="img/ai.jpg" alt="The psychology of computer programming">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/0932633420/ref=cm_sw_r_tw_dp_U_x_O0HoDbJ9T2BWP">
+                                    <img src="img/psychology.jpg" alt="The psychology of computer programming">
+                                </a>
+                            </div>
+                            <div class="column is-narrow book">
+                                <a href="https://www.amazon.fr/dp/1942788002/ref=cm_sw_r_tw_dp_U_x_bqXoDbSA2T366">
+                                    <img src="img/devops.jpg" alt="The DevOps Handbook">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section" class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-reversed">
+                    <div class="column">
+                        <h1 class="title has-text-centered" value="contactNetworks"></h1>
+                        <div class="columns is-centered is-mobile">
+                            <div class="column is-narrow">
+                                <a href="https://www.facebook.com/othman.tenich">
+                                    <img src="img/facebook.png" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="column is-narrow">
+                                <a href="https://twitter.com/Otenich">
+                                    <img src="img/twitter.png" alt="Twitter">
+                                </a>
+                            </div>
+                            <div class="column is-narrow">
+                                <a href="https://www.linkedin.com/in/otenich/">
+                                    <img src="img/linkedin.png" alt="Linkedin">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-spaced has-text-centered" value="contactMessage"></h1>
+                        <h4 class="subtitle is-4 has-text-centered">otenich@gmail.com</h4>
+                    </div>
+                </div>
+                <div class="level">
+                    <div class="level-item">
+                        <p>OTHMAN TENICH <span class="has-text-primary">©2019</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
